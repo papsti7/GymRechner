@@ -3,4 +3,59 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"
+        android:background="#c2c2c2"
+        android:id="@+id/header"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GymRechner"
+            android:id="@+id/tv_title"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#44779a"
+            android:paddingRight="20dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/iv_logo"
+            android:src="@mipmap/logo_gross"
+            android:layout_weight="2.5"
+            android:paddingRight="33dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/content"
+        android:background="#44779a">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Geben Sie Ihr Arbeitsgewicht ein."
+            android:id="@+id/tv_todo"
+            android:textColor="#c2c2c2"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp"
+            android:singleLine="true"
+            android:textSize="17dp" />
+
+    </LinearLayout>
 </LinearLayout>
