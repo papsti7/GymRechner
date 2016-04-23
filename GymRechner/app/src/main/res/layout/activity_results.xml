@@ -46,65 +46,149 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Geben Sie Ihr Arbeitsgewicht ein."
-            android:id="@+id/tv_todo"
+            android:text="Gewicht ändern"
+            android:id="@+id/tv_todo_result"
             android:textColor="#c2c2c2"
             android:textStyle="normal"
-            android:gravity="center"
+            android:gravity="center|right"
             android:paddingTop="40dp"
             android:paddingBottom="20dp"
             android:singleLine="true"
-            android:textSize="17dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/contentSection"
-        android:background="@drawable/shadow3"
-        android:layout_margin="15dp">
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:hint="ex.: 80"
-            android:id="@+id/et_weight"
+            android:textSize="17dp"
             android:layout_weight="1"
-            android:paddingLeft="5dp"
-            android:autoText="true"
-            android:layout_marginLeft="80dp"
-            android:clickable="false"
-            android:layout_marginRight="75dp"
-            android:textColor="#000000"
-            android:singleLine="false"
-            android:numeric="integer"
-            android:paddingTop="25dp" />
+            android:paddingRight="70dp" />
 
         <ImageButton
             android:layout_width="fill_parent"
-            android:layout_height="70dp"
-            android:id="@+id/ib_calculate"
-            android:src="@mipmap/arrow2_mittel"
-            android:background="#c2c2c2"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_back"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_weight="4"
             android:clickable="true"
+            android:paddingTop="35dp"
             android:paddingRight="50dp"
-            android:paddingBottom="10dp"
-            android:layout_weight="3"
-            android:paddingTop="10dp"
-            android:cropToPadding="false"
-            android:focusable="false"
-            android:onClick="calculateWeights" />
+            android:background="#44779a"
+            android:onClick="back" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:background="#44779a"
-        android:id="@+id/spaceholder"></LinearLayout>
+        android:id="@+id/contentSection"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:id="@+id/result80"
+            android:background="@drawable/shadow3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tv_result80"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:autoText="true"
+                android:layout_marginLeft="80dp"
+                android:clickable="false"
+                android:layout_marginRight="75dp"
+                android:textColor="#000000"
+                android:singleLine="false"
+                android:numeric="integer"
+                android:paddingTop="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:id="@+id/result60"
+            android:background="@drawable/shadow3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tv_result60"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:autoText="true"
+                android:layout_marginLeft="80dp"
+                android:clickable="false"
+                android:layout_marginRight="75dp"
+                android:textColor="#000000"
+                android:singleLine="false"
+                android:numeric="integer"
+                android:paddingTop="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:id="@+id/result50"
+            android:background="@drawable/shadow3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tv_result50"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:autoText="true"
+                android:layout_marginLeft="80dp"
+                android:clickable="false"
+                android:layout_marginRight="75dp"
+                android:textColor="#000000"
+                android:singleLine="false"
+                android:numeric="integer"
+                android:paddingTop="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:id="@+id/result40"
+            android:background="@drawable/shadow3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/tv_result40"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:autoText="true"
+                android:layout_marginLeft="80dp"
+                android:clickable="false"
+                android:layout_marginRight="75dp"
+                android:textColor="#000000"
+                android:singleLine="false"
+                android:numeric="integer"
+                android:paddingTop="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
