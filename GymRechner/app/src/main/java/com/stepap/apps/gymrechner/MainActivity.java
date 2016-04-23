@@ -77,16 +77,16 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_results);
         TextView tv_results = (TextView)findViewById(R.id.tv_result80);
-        tv_results.setText("80% of " + weight + " : \t\t\t" + results.get(80));
+        tv_results.setText("80% of " + weight + " : \t\t\t\t" + results.get(80));
 
         tv_results = (TextView)findViewById(R.id.tv_result60);
-        tv_results.setText("60% of " + weight + " : \t\t\t" + results.get(60));
+        tv_results.setText("60% of " + weight + " : \t\t\t\t" + results.get(60));
 
         tv_results = (TextView)findViewById(R.id.tv_result50);
-        tv_results.setText("50% of " + weight + " : \t\t\t" + results.get(50));
+        tv_results.setText("50% of " + weight + " : \t\t\t\t" + results.get(50));
 
         tv_results = (TextView)findViewById(R.id.tv_result40);
-        tv_results.setText("40% of " + weight + " : \t\t\t" + results.get(40));
+        tv_results.setText("40% of " + weight + " : \t\t\t\t" + results.get(40));
 
     }
 
