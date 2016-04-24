@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-    void calculateWeights(View view) {
+    public void calculateWeights(View view) {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         EditText editText = (EditText) findViewById(R.id.et_weight);
         int weight;
