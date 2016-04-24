@@ -65,7 +65,7 @@
             android:src="@android:drawable/ic_menu_revert"
             android:layout_weight="4"
             android:clickable="true"
-            android:paddingTop="35dp"
+            android:paddingTop="32dp"
             android:paddingRight="50dp"
             android:background="#44779a"
             android:onClick="back" />
@@ -91,21 +91,21 @@
             android:layout_marginRight="15dp">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result80"
-                android:layout_weight="1"
-                android:paddingLeft="5dp"
+                android:layout_weight="0.07"
+                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
-                android:numeric="integer"
-                android:paddingTop="25dp" />
+                android:textSize="20sp"
+                android:paddingTop="13dp" />
 
         </LinearLayout>
         <LinearLayout
@@ -123,16 +123,16 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result60"
-                android:layout_weight="1"
-                android:paddingLeft="5dp"
+                android:layout_weight="0.07"
+                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
-                android:numeric="integer"
-                android:paddingTop="25dp" />
+                android:textSize="20sp"
+                android:paddingTop="13dp" />
 
         </LinearLayout>
         <LinearLayout
@@ -150,16 +150,16 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result50"
-                android:layout_weight="1"
-                android:paddingLeft="5dp"
+                android:layout_weight="0.07"
+                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
-                android:numeric="integer"
-                android:paddingTop="25dp" />
+                android:textSize="20sp"
+                android:paddingTop="13dp" />
 
         </LinearLayout>
         <LinearLayout
@@ -177,16 +177,16 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result40"
-                android:layout_weight="1"
-                android:paddingLeft="5dp"
+                android:layout_weight="0.07"
+                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
-                android:numeric="integer"
-                android:paddingTop="25dp" />
+                android:textSize="20sp"
+                android:paddingTop="13dp" />
 
         </LinearLayout>
 

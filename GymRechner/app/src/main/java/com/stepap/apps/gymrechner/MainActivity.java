@@ -2,10 +2,12 @@ package com.stepap.apps.gymrechner;
 
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         //Remove title bar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_entry);
+
         //set screenbrightness to 100% to have better color feel
         WindowManager.LayoutParams layout = getWindow().getAttributes();
         layout.screenBrightness = 1F;
@@ -72,21 +76,21 @@ public class MainActivity extends AppCompatActivity {
         results.put(50, (int) (weight * 0.5f));
 
 
-        System.out.println(results);
+        //System.out.println(results);
 
 
         setContentView(R.layout.activity_results);
         TextView tv_results = (TextView)findViewById(R.id.tv_result80);
-        tv_results.setText("80% of " + weight + " : \t\t\t\t" + results.get(80));
+        tv_results.setText(Html.fromHtml("<strong>80%</strong> of <strong>" + weight + "</strong> : \t\t\t\t<font color = \"#c08706\"<strong>" + results.get(80) + "</strong></font>"));
 
         tv_results = (TextView)findViewById(R.id.tv_result60);
-        tv_results.setText("60% of " + weight + " : \t\t\t\t" + results.get(60));
+        tv_results.setText(Html.fromHtml("<strong>60%</strong> of <strong>" + weight + "</strong> : \t\t\t\t<font color = \"#c08706\"<strong>" + results.get(60) + "</strong></font>"));
 
         tv_results = (TextView)findViewById(R.id.tv_result50);
-        tv_results.setText("50% of " + weight + " : \t\t\t\t" + results.get(50));
+        tv_results.setText(Html.fromHtml("<strong>50%</strong> of <strong>" + weight + "</strong> : \t\t\t\t<font color = \"#c08706\"<strong>" + results.get(50) + "</strong></font>"));
 
         tv_results = (TextView)findViewById(R.id.tv_result40);
-        tv_results.setText("40% of " + weight + " : \t\t\t\t" + results.get(40));
+        tv_results.setText(Html.fromHtml("<strong>40%</strong> of <strong>" + weight + "</strong> : \t\t\t\t<font color = \"#c08706\"<strong>" + results.get(40) + "</strong></font>"));
 
     }
 

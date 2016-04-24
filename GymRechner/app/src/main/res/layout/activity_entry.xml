@@ -88,7 +88,7 @@
             android:layout_width="fill_parent"
             android:layout_height="70dp"
             android:id="@+id/ib_calculate"
-            android:src="@mipmap/arrow2_mittel"
+            android:src="@android:drawable/ic_menu_send"
             android:background="#c2c2c2"
             android:clickable="true"
             android:paddingRight="50dp"
