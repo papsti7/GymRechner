@@ -7,32 +7,33 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="85dp"
         android:background="#c2c2c2"
         android:id="@+id/header"
         >
 
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="GymRechner"
             android:id="@+id/tv_title"
-            android:layout_weight="1"
-            android:gravity="center|right"
+            android:gravity="center"
             style="@style/Base.TextAppearance.AppCompat.Title"
             android:textSize="35dp"
             android:textStyle="bold"
             android:textColor="#44779a"
-            android:paddingRight="20dp" />
+            android:autoText="false"
+            android:maxLines="1"
+            android:layout_weight="1" />
 
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:id="@+id/iv_logo"
             android:src="@mipmap/logo_gross"
-            android:layout_weight="2.5"
-            android:paddingRight="33dp" />
+            android:layout_gravity="center"
+            android:layout_weight="2.5" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,25 +61,24 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="350dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/contentSection"
         android:background="@drawable/shadow3"
-        android:layout_margin="15dp">
+        android:layout_margin="15dp"
+        android:gravity="center">
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:hint="ex.: 80"
+            android:hint="beispielsweise 80"
             android:id="@+id/et_weight"
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:autoText="true"
-            android:layout_marginLeft="80dp"
             android:clickable="false"
-            android:layout_marginRight="75dp"
             android:textColor="#000000"
             android:singleLine="false"
             android:numeric="integer"
@@ -91,13 +91,11 @@
             android:src="@android:drawable/ic_menu_send"
             android:background="#c2c2c2"
             android:clickable="true"
-            android:paddingRight="50dp"
-            android:paddingBottom="10dp"
             android:layout_weight="3"
-            android:paddingTop="10dp"
             android:cropToPadding="false"
             android:focusable="false"
-            android:onClick="calculateWeights" />
+            android:onClick="calculateWeights"
+            android:layout_gravity="center" />
     </LinearLayout>
 
     <LinearLayout

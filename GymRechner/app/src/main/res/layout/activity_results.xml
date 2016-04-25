@@ -7,88 +7,88 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="85dp"
         android:background="#c2c2c2"
-        android:id="@+id/header"
-        >
+        android:id="@+id/header">
 
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="GymRechner"
             android:id="@+id/tv_title"
-            android:layout_weight="1"
-            android:gravity="center|right"
+            android:gravity="center"
             style="@style/Base.TextAppearance.AppCompat.Title"
             android:textSize="35dp"
             android:textStyle="bold"
             android:textColor="#44779a"
-            android:paddingRight="20dp" />
+            android:autoText="false"
+            android:maxLines="1"
+            android:layout_weight="1" />
 
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:id="@+id/iv_logo"
             android:src="@mipmap/logo_gross"
-            android:layout_weight="2.5"
-            android:paddingRight="33dp" />
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="2.5" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="97dp"
+        android:layout_height="wrap_content"
         android:id="@+id/textSection"
-        android:background="#44779a">
+        android:background="#44779a"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Gewicht ändern"
             android:id="@+id/tv_todo_result"
             android:textColor="#c2c2c2"
             android:textStyle="normal"
-            android:gravity="center|right"
-            android:paddingTop="40dp"
-            android:paddingBottom="20dp"
+            android:gravity="center"
             android:singleLine="true"
             android:textSize="17dp"
             android:layout_weight="1"
-            android:paddingRight="70dp" />
+            android:layout_gravity="center" />
 
         <ImageButton
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/ib_back"
             android:src="@android:drawable/ic_menu_revert"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:clickable="true"
-            android:paddingTop="32dp"
-            android:paddingRight="50dp"
             android:background="#44779a"
-            android:onClick="back" />
+            android:onClick="back"
+            android:layout_gravity="center" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_height="fill_parent"
         android:background="#44779a"
         android:id="@+id/contentSection"
-        android:layout_weight="1"
-        android:layout_marginTop="20dp">
+        android:layout_weight="1">
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="350dp"
+            android:layout_width="fill_parent"
             android:layout_height="90dp"
             android:id="@+id/result80"
             android:background="@drawable/shadow3"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginRight="15dp"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,99 +96,94 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result80"
-                android:layout_weight="0.07"
-                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
                 android:textSize="20sp"
-                android:paddingTop="13dp" />
+                android:maxLines="1"
+                android:gravity="center" />
 
         </LinearLayout>
+
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="350dp"
+            android:layout_width="fill_parent"
             android:layout_height="90dp"
             android:id="@+id/result60"
             android:background="@drawable/shadow3"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginRight="15dp"
+            android:gravity="center">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result60"
-                android:layout_weight="0.07"
-                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
                 android:textSize="20sp"
-                android:paddingTop="13dp" />
+                android:gravity="center"
+                android:maxLines="1" />
 
         </LinearLayout>
+
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="350dp"
+            android:layout_width="fill_parent"
             android:layout_height="90dp"
             android:id="@+id/result50"
             android:background="@drawable/shadow3"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginRight="15dp"
+            android:gravity="center">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result50"
-                android:layout_weight="0.07"
-                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
                 android:textSize="20sp"
-                android:paddingTop="13dp" />
+                android:gravity="center"
+                android:maxLines="1" />
 
         </LinearLayout>
+
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="350dp"
+            android:layout_width="fill_parent"
             android:layout_height="90dp"
             android:id="@+id/result40"
             android:background="@drawable/shadow3"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginRight="15dp"
+            android:gravity="center">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/tv_result40"
-                android:layout_weight="0.07"
-                android:paddingLeft="18dp"
                 android:autoText="true"
-                android:layout_marginLeft="50dp"
                 android:clickable="false"
-                android:layout_marginRight="45dp"
                 android:textColor="#000000"
                 android:singleLine="false"
                 android:textSize="20sp"
-                android:paddingTop="13dp" />
+                android:gravity="center"
+                android:maxLines="1" />
 
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
