@@ -1,2 +1,3 @@
 # GymRechner
-This is my first android app. The idea came up when I tried to calculate my weights for gym, but I had no app for this.
+The GymRechner is an Android App, which helps you to calculate the weights for your warm up session at the Gym.
+
